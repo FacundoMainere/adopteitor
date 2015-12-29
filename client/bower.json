@@ -1,0 +1,24 @@
+{
+  "name": "adopteitor",
+  "homepage": "https://github.com/FacundoMainere/adopteitor",
+  "authors": [
+    "Facundo Mainere <fmmainere@gmail.com>"
+  ],
+  "description": "Adopting page",
+  "main": "",
+  "dependencies": {
+    "angular": "1.5.x"
+  },
+  "moduleType": [],
+  "keywords": [
+    "adopting"
+  ],
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
