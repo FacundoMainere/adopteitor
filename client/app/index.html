@@ -32,32 +32,6 @@
         <div class="col-sm-6 text-left">MENU IZQ</div>
         <div class="col-sm-6 text-right">MENU DER</div>
     </div>
-    <div class="row" id="intro">
-      <div class="col-lg-2 col-lg-offset-1 hidden-xs hidden-sm">
-        <img src="img/portada/1.jpg" alt="" class="img-circle" width="250px" height="250px"/>
-      </div>
-      <div class="col-lg-6 col-lg-offset-1 col-xs-12">
-      <h1>¿Por què los Galgos?</h1>
-        <p class="lead justificado">Porque al mismo tiempo que son excelentes compañeros; leales, tranquilos, cariñosos;
-        son una de las razas más maltratadas en varias partes del mundo. En España les dicen "perros de usar y tirar", y en Argentina no es diferente...</p>
-        <p id="jumbotronBtn"><a class="btn btn-lg btn-primary" href="porquelosgalgos.php" role="button">Conoce mas!</a></p>
-      </div>
-    </div>
-    <hr id="separador" />
-    <div class="container-fluid">
-        <div class="row" id="listapepos">
-            <h1>Galgos en adopcion</h1>
-        </div>
-        <div class="row text-center" id="listapepos">
-            <div class="col-sm-3" ng-repeat="galgo in galgosEnAdopcion">
-                <div id="edad" class="macho">
-                    <p>{{galgo.edad}}</p>
-                </div>
-                <img class="img-circle" src="img/adopcion/Anakin.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2 class="macho">{{galgo.nombre}}</h2>
-                <p>{{galgo.desc}}</p>
-                <span><a class="btn btn-primary" href="#" role="button">Saber mas!</a></span>
-            </div>
-        </div>
+    <div class="container-fluid" ng-view></div>
 </body>
 </html>

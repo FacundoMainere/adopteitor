@@ -28,14 +28,13 @@ var adopteitorApp = angular.module('adopteitorApp', [
               }],
             }
           }).
-          when('/libraries', {
-            templateUrl: 'views/library-list.html',
-            controller: 'LibraryListCtrl',
-            resolve: {
-              authenticated: ['djangoAuth', function(djangoAuth){
-                return djangoAuth.authenticationStatus(true);
-              }],
-            }
+          when('/admin', {
+            templateUrl: 'views/admin.html',
+            controller: 'AdminCtrl',
+          }).
+		  when('/home', {
+            templateUrl: 'views/home.html',
+            controller: 'HomeCtrl',
           }).
           when('/libraries/:libraryId', {
             templateUrl: 'views/library-detail.html',
@@ -56,7 +55,7 @@ var adopteitorApp = angular.module('adopteitorApp', [
             }
           }).
           otherwise({
-            redirectTo: '/libraries'
+            redirectTo: '/'
           });
   })
   .run(function(djangoAuth, ENV){

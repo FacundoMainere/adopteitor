@@ -112,7 +112,10 @@ h1, h2, h3, h4{
   font-family: 'delicious_smallcapsregular', sans-serif;
   font-style: bold;
 }
-
+.row{
+    margin-right:0 !important;
+    margin-left:0 !important;
+}
 
 #logo{
   position: relative;
