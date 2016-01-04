@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('../fonts/ChunkFive/chunkfive-webfont.eot');
+    src: url('../fonts/ChunkFive/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ChunkFive/chunkfive-webfont.woff2') format('woff2'),
+         url('../fonts/ChunkFive/chunkfive-webfont.woff') format('woff'),
+         url('../fonts/ChunkFive/chunkfive-webfont.ttf') format('truetype'),
+         url('../fonts/ChunkFive/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amaticbold';
+    src: url('../fonts/Amatic/amatic-bold-webfont.eot');
+    src: url('../fonts/Amatic/amatic-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amatic/amatic-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Amatic/amatic-bold-webfont.woff') format('woff'),
+         url('../fonts/Amatic/amatic-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Amatic/amatic-bold-webfont.svg#amaticbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('../fonts/Amatic/amaticsc-regular-webfont.eot');
+    src: url('../fonts/Amatic/amaticsc-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Amatic/amaticsc-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Amatic/amaticsc-regular-webfont.woff') format('woff'),
+         url('../fonts/Amatic/amaticsc-regular-webfont.ttf') format('truetype'),
+         url('../fonts/Amatic/amaticsc-regular-webfont.svg#amatic_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'deliciousroman';
+    src: url('delicious-roman-webfont.eot');
+    src: url('delicious-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('delicious-roman-webfont.woff2') format('woff2'),
+         url('delicious-roman-webfont.woff') format('woff'),
+         url('delicious-roman-webfont.ttf') format('truetype'),
+         url('delicious-roman-webfont.svg#deliciousroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'delicious_smallcapsregular';
+    src: url('delicious-smallcaps-webfont.eot');
+    src: url('delicious-smallcaps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('delicious-smallcaps-webfont.woff2') format('woff2'),
+         url('delicious-smallcaps-webfont.woff') format('woff'),
+         url('delicious-smallcaps-webfont.ttf') format('truetype'),
+         url('delicious-smallcaps-webfont.svg#delicious_smallcapsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.vcenter {
+    vertical-align: middle;
+    float: none;
+}
+
+body{
+	font-family: 'delicious_smallcapsregular', sans-serif;
+  margin-left:0px;
+  margin-right:0px;
+  padding:0;
+  background-color: #e1f3f5;
+}
+@media all and (max-width: 420px){
+  #header{
+    text-align: center;
+    background-image: url("../img/header_md.jpg");
+    background-position: center;
+    height:214px;
+
+  }
+  #headerContainer{
+  background-color: #1bb7cd;
+}
+}
+@media all and (min-width: 421px){
+  #header{
+  text-align: center;
+  background-image: url("../img/header.jpg");
+  height:314px;
+}
+
+#headerContainer{
+  background-color: #1bb7cd;
+}
+}
+
+@media all and (max-width: 420px){
+  h1{
+    text-align: center;
+    font-size: 2em;
+  }
+}
+h1, h2, h3, h4{
+  font-family: 'chunkfiveroman', sans-serif;
+}
+
+.btn{
+  font-family: 'delicious_smallcapsregular', sans-serif;
+  font-style: bold;
+}
+
+
+#logo{
+  position: relative;
+  top:80%;
+}
+
+#menu a:hover{
+  text-decoration: none;
+}
+
+#menu ul{
+  list-style-type: none;
+  padding:0px;
+  margin: 0px;
+}
+
+#menu li{
+  display: inline-block;
+  padding:10px;
+  font-family: 'chunkfiveroman', sans-serif;
+}
+
+#menuSmall{
+  margin-top: 6em;
+  text-align: center;
+}
+
+#menuLeft{
+  margin-top: 1em;
+  text-align: left;
+  padding: 0px;
+  }
+
+#menuRight{
+  margin-top: 1em;
+  text-align: right;
+  padding: 0px;
+}
+
+#menu hr{
+  width: 90%;
+}
+
+#hrMenuLeft{
+  float: left;
+}
+
+#hrMenuRight{
+  float: right;
+}
+
+hr{
+  border-color: black;
+}
+
+#separador{
+    margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+#listapepos{
+  text-align: center;
+}
+
+#listapepos div{
+  padding-left:60px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+#listapepos h1{
+  text-align: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-family: 'chunkfiveroman', sans-serif;
+}
+
+#listapepos h2{
+  text-align: center;
+  padding-top:5px;
+  padding-bottom: 5px;
+  font-family: 'chunkfiveroman', sans-serif;
+}
+
+#listapepos p{
+  text-align : justify;
+}
+
+#edad{
+  box-shadow: 0px 0px 20px #888888;
+  position: absolute;
+  border-radius: 10px;
+  top:20px;
+  right:50px;
+  z-index: -2;
+}
+
+#edad p{
+    text-align: right;
+    font-size: 1.4em;
+    margin-top: -20px;
+    margin-right: 5px;
+    font-family: 'chunkfiveroman', sans-serif;
+}
+
+.macho{
+  background-color:#6babe5;
+}
+
+.hembra{
+  background-color:#ecadb8;
+}
+
+#porquelosGalgos img{
+  margin-top: 5em;
+}
+
+@media all and (max-width: 420px){
+  #comoAyudar{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  #comoAyudar div{
+    margin-bottom: 2em;
+  }
+
+  #porquelosGalgos h1{
+  margin-bottom: 1em;
+  }
+
+  #intro h1{
+    margin-bottom: 1em;
+  }
+}
+
+#comoAyudar{
+  text-align: center;
+}
+
+.justificado{
+  text-align: justify;
+}
+
+#error404{
+  text-align: center;
+}
+
+#botonVerde{
+  background-color: #8caa73;
+  border-color: #637f4d;
+}
+
+#botonVioleta{
+  background-color: #7b61d8;
+  border-color: #644bbe;
+}
+
+#botonNaranja{
+  background-color: #e45141;
+  border-color: #b64134;
+}
+
+#botonAzul{
+  background-color: #477eec;
+  border-color: #3360bc;
+}
+
+#botonAmarillo{
+  background-color: #e5db30;
+  border-color: #c2b924;
+  color:black;
+}
+
+@media all and (max-width: 420px){
+  #footer div{
+    margin-bottom: 1em;
+  }
+  #footer{
+    margin-top: 1em;
+    background-color: #1bb7cd;
+    padding-top: 2em;
+    text-align: center;
+  }
+}
+@media all and (min-width: 420px){
+  #footer{
+  margin-top: 4em;
+  background-color: #1bb7cd;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  text-align: center;
+  }
+}
+
+
+
+#donaciones{
+  text-align: center;
+}
