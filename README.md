@@ -16,6 +16,25 @@ Install dependencies:
 
     pip install -r requirements.txt
 
+Run Migrate:
+
+    python manage.py migrate
+
+Create superuser to access backend:
+
+    python manage.py createsuperuser
+
 Run server:
 
     python manage.py runserver
+
+
+#### Client:
+
+Install NPM:
+
+    nmp install
+
+Start NPM
+
+    npm start
