@@ -122,6 +122,9 @@ h1, h2, h3, h4{
   top:80%;
 }
 
+#menu li{
+    text-transform: uppercase;
+}
 #menu a:hover{
   text-decoration: none;
 }
@@ -233,6 +236,9 @@ hr{
   margin-top: 5em;
 }
 
+#intro{
+    margin-top: 2em;
+}
 @media all and (max-width: 420px){
   #comoAyudar{
     margin-top: 2em;

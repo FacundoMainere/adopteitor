@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui//build/angular-ui.js"></script>
@@ -29,9 +29,9 @@
     </div>
         <div class="col-sm-12 text-center">{{ state }}</div>
     </div>
-    <div class="row">
-        <div class="col-sm-6 text-left"><a ui-sref="home">MENU IZQ</a></div>
-        <div class="col-sm-6 text-right"><a ui-sref="about">MENU DER</a></div>
+    <div class="row" id="menu">
+        <div class="col-sm-6 text-left"><menu-Left></menu-Left></div>
+        <div class="col-sm-6 text-right"><menu-Right></menu-Right></div>
     </div>
     <div class="container-fluid" ui-view></div>
 </body>
