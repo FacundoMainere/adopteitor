@@ -10,11 +10,6 @@ adopteitorApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 
 
-        .state('admin', {
-            url: '/admin',
-            abstract:true,
-            templateUrl: 'views/admin.html'
-        })
         .state('home', {
             url: '/home',
             templateUrl: 'views/home.html'
