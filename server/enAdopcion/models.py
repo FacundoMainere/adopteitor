@@ -6,7 +6,7 @@ class enAdopcion(models.Model):
     ('h ', 'hembra')
     )
     id = models.AutoField(primary_key=True)
-    genero = models.CharField(max_length=1, choices=genero_opciones)
+    genero = models.CharField(max_length=2, choices=genero_opciones)
     edad = models.IntegerField()
     desc = models.TextField(max_length=1024)
     foto = models.CharField(max_length=255)
