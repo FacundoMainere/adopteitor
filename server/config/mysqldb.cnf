@@ -1,0 +1,6 @@
+[client]
+database = adopteitor1
+host = localhost
+user = adopteitor1
+password = adopteitor1
+default-character-set = utf8
