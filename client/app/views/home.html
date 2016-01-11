@@ -16,11 +16,11 @@
     </div>
     <div class="row text-center" id="listapepos">
         <div class="col-sm-3" ng-repeat="galgo in galgosEnAdopcion">
-            <div id="edad" class="macho">
+            <div id="edad" ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">
                 <p>{{galgo.edad}}</p>
             </div>
             <img class="img-circle" src="img/adopcion/Anakin.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2 class="macho">{{galgo.nombre}}</h2>
+            <h2 ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">{{galgo.nombre}}</h2>
             <p>{{galgo.desc}}</p>
             <span><a class="btn btn-primary" href="#" role="button">Saber mas!</a></span>
         </div>

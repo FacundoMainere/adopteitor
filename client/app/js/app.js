@@ -1,6 +1,6 @@
 'use strict';
 
-var adopteitorApp = angular.module('adopteitorApp', ['ui.router']);
+var adopteitorApp = angular.module('adopteitorApp', ['ui.router', 'ngResource']);
 
 
 adopteitorApp.config(function($stateProvider, $urlRouterProvider) {

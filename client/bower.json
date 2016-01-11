@@ -10,7 +10,8 @@
     "angular": "1.5.x",
     "angular-ui": "~0.4.0",
     "angular-bootstrap": "~0.14.3",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.8"
   },
   "moduleType": [],
   "keywords": [
@@ -23,5 +24,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "resolutions": {
+    "angular": "1.5.x"
+  }
 }

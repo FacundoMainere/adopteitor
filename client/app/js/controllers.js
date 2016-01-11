@@ -1,12 +1,14 @@
 'use strict';
 
-adopteitorApp.controller('GalgosEnAdopcion', ['$scope', '$location',
-    function ($scope, $location) {
-        $scope.galgosEnAdopcion = [
-                {"id": 1, "nombre": "Galgo 1", "sexo":"macho", "desc":"dasdasdasdasdasdasdasdad", "edad":2},
-                {"id": 2, "nombre": "Galgo 2", "sexo":"macho", "desc":"dasdasdasdasdasdasdasdad", "edad":4},
-                {"id": 3, "nombre": "Galgo 3", "sexo":"macho", "desc":"dasdasdasdasdasdasdasdad", "edad":6},
-                {"id": 4, "nombre": "Galgo 4", "sexo":"macho", "desc":"dasdasdasdasdasdasdasdad", "edad":6}
-              ];
+adopteitorApp.factory('enAdopcion', ['$resource', function($resource){
+    return $resource('http://localhost:8000/enAdopcion/', null, {'query':{method: 'GET', isArray: true}});
+}]);
+
+adopteitorApp.controller('GalgosEnAdopcion', ['$scope', '$location', 'enAdopcion',
+    function ($scope, $location, enAdopcion) {
+              $scope.galgosEnAdopcion = enAdopcion.query();
+              $scope.galgosEnAdopcion.$promise.then(function(data) {
+                  $scope.galgosEnAdopcionRes = data.results;
+              });
     }
 ]);
