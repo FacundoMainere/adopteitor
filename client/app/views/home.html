@@ -22,7 +22,7 @@
             <img class="img-circle" src="img/adopcion/Anakin.jpg" alt="Generic placeholder image" width="140" height="140">
             <h2 ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">{{galgo.nombre}}</h2>
             <p>{{galgo.desc}}</p>
-            <span><a class="btn btn-primary" href="#" role="button">Saber mas!</a></span>
+            <span><a class="btn btn-primary" href="#" role="button" ng-click="saberMas(galgo.id)">Saber mas!</a></span>
         </div>
     </div>
 </div>
