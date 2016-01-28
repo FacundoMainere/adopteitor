@@ -11,7 +11,8 @@
     "angular-ui": "~0.4.0",
     "angular-bootstrap": "~0.14.3",
     "angular-ui-router": "~0.2.15",
-    "angular-resource": "~1.4.8"
+    "angular-resource": "~1.4.8",
+    "components-font-awesome": "~4.5.0"
   },
   "moduleType": [],
   "keywords": [
