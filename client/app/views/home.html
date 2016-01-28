@@ -6,7 +6,7 @@
   <h1>¿Por què los Galgos?</h1>
     <p class="lead justificado">Porque al mismo tiempo que son excelentes compañeros; leales, tranquilos, cariñosos;
     son una de las razas más maltratadas en varias partes del mundo. En España les dicen "perros de usar y tirar", y en Argentina no es diferente...</p>
-    <p id="jumbotronBtn"><a class="btn btn-lg btn-primary" href="porquelosgalgos.php" role="button">Conoce mas!</a></p>
+    <p id="jumbotronBtn"><a class="btn btn-lg btn-primary" ui-sref="mision" role="button">Conoce mas!</a></p>
   </div>
 </div>
 <hr id="separador" />
@@ -14,15 +14,17 @@
     <div class="row" id="listapepos">
         <h1>Galgos en adopcion</h1>
     </div>
-    <div class="row text-center" id="listapepos">
+    <div class="text-center" id="listapepos">
         <div class="col-sm-3" ng-repeat="galgo in galgosEnAdopcion">
+          <div class="well tarjetaEnAdopcion">
             <div id="edad" ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">
-                <p>{{galgo.edad}}</p>
+                <p></p>
             </div>
             <img class="img-circle" src="img/adopcion/Anakin.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2 ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">{{galgo.nombre}}</h2>
-            <p>{{galgo.desc}}</p>
+            <h2 ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">{{galgo.nombre | limitTo : 9}}{{galgo.nombre.length > 9 ? '...' : ''}} ({{galgo.edad}})</h2>
+            <p class="desc">{{galgo.desc | limitTo : 30 }}{{galgo.desc.length > 30 ? '...' : ''}}</p>
             <span><a class="btn btn-primary" href="#" role="button" ng-click="saberMas(galgo.id)">Saber mas!</a></span>
+          </div>
         </div>
     </div>
 </div>

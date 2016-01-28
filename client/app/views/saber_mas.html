@@ -4,11 +4,11 @@
             <h1>{{ enAdopcion.nombre }}</h1>
             <img class="img-circle" src="img/adopcion/Anakin.jpg" alt="Generic placeholder image" width="140" height="140">
         </div>
-        <div class="col-sm-6 text-left">
-            <h3>{{ enAdopcion.edad }}</h3>
+        <div class="col-sm-3 col-sm-offset-3 text-left">
+            <h3><bold>Edad</bold>{{ enAdopcion.edad }}</h3>
         </div>
-        <div class="col-sm-6 text-right">
-            <h3>{{ enAdopcion.genero }}</h3>
+        <div class="col-sm-3 col-sm-offset-3 text-right">
+            <span><i class="fa" ng-class="{'m': 'fa-venus', 'h': 'fa-mars'}[enAdopcion.genero]"></i></span>
         </div>
         <div class="col-sm-12 well">
             <h4>{{ enAdopcion.desc }}</h4>
@@ -17,7 +17,9 @@
             <span><a class="btn btn-primary" href="#" role="button" ng-click="adoptar(galgo.id)">Adoptar!</a></span>
         </div>
         <div class="col-sm-12 text-center">
+            <br/>
             <p>Necesitas ayuda?</p>
+            <br/>
         </div>
     </div>
 </div>
