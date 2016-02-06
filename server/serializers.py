@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User, Group
 from enAdopcion.models import enAdopcion
+from enAdopcion.models import enAdopcionFotos
 from rest_framework import serializers
 
 
@@ -17,4 +18,9 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class EnAdopcionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = enAdopcion
-        fields = ('id', 'genero', 'edad', 'desc', 'foto', 'nombre')
+        fields = ('id','nombre', 'genero', 'edad', 'desc')
+
+class EnAdopcionFotosSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = enAdopcionFotos
+        fields = ('imagen', 'galgo')

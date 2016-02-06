@@ -6,8 +6,14 @@ class enAdopcion(models.Model):
     ('h', 'hembra')
     )
     id = models.AutoField(primary_key=True)
+    nombre = models.CharField(max_length=255)
     genero = models.CharField(max_length=1, choices=genero_opciones)
     edad = models.IntegerField()
     desc = models.TextField(max_length=1024)
-    foto = models.CharField(max_length=255)
-    nombre = models.CharField(max_length=255)
+    def __unicode__(self):
+        return "[" + str(self.id) + "] " + self.nombre
+
+
+class enAdopcionFotos(models.Model):
+    imagen = models.ImageField('File', upload_to='images/')
+    galgo = models.ForeignKey('enAdopcion', blank=True, null=True, related_name='the_owner_of_this_photo')

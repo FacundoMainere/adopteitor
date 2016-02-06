@@ -1,7 +1,8 @@
 from django.contrib.auth.models import User, Group
 from enAdopcion.models import enAdopcion
+from enAdopcion.models import enAdopcionFotos
 from rest_framework import viewsets
-from serializers import UserSerializer, GroupSerializer, EnAdopcionSerializer
+from serializers import UserSerializer, GroupSerializer, EnAdopcionSerializer, EnAdopcionFotosSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -25,3 +26,10 @@ class enAdopcionViewSet(viewsets.ModelViewSet):
     """
     queryset = enAdopcion.objects.all()
     serializer_class = EnAdopcionSerializer
+
+class enAdopcionFotosViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = enAdopcionFotos.objects.all()
+    serializer_class = EnAdopcionFotosSerializer
