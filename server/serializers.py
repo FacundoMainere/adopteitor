@@ -24,3 +24,8 @@ class EnAdopcionFotosSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = enAdopcionFotos
         fields = ('imagen', 'galgo')
+
+class EnAdopcionFotosPorGalgoSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = enAdopcionFotos
+        fields = ('imagen', 'galgo')
