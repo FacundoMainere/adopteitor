@@ -1,6 +1,10 @@
+$background: #e1f3f5;
+$color-male: #6babe5;
+$color-female: #ecadb8;
+
 .vcenter {
-    vertical-align: middle;
-    float: none;
+  vertical-align: middle;
+  float: none;
 }
 
 body{
@@ -8,8 +12,9 @@ body{
   margin-left:0px;
   margin-right:0px;
   padding:0;
-  background-color: #e1f3f5;
+  background-color: $background;
 }
+
 @media all and (max-width: 420px){
   #header{
     text-align: center;
@@ -113,64 +118,32 @@ hr{
 .separador{
   margin-top: 4em;
   margin-bottom: 2em;
+  .medio{
+    width: 50%;
+  }
 }
 
-.separador .medio{
-  margin-top: 4em;
-  margin-bottom: 2em;
-  width: 50%;
-}
 
-#listapepos{
-  /*text-align: center;*/
-}
-
-#listapepos div{
-  /*padding-left:20px;
-  padding-right:20px;
-  padding-top:20px;
-  padding-bottom: 20px;*/
-}
-
-#listapepos h1{
-  /*text-align: center;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  font-family: 'chunkfiveroman', sans-serif;*/
-}
-
-#listapepos h2{
-  /*text-align: center;
-  padding-top:5px;
-  padding-bottom: 5px;
-  font-family: 'chunkfiveroman', sans-serif;*/
-}
-
-#listapepos p{
-  /*text-align : justify;*/
-}
 
 .tarjetaEnAdopcion{
   padding: 1em 1.3em;
-    /*border: 1px solid #ccc;
-    margin: 0.5em;
-    box-sizing: border-box;
-    border-radius: 1em;
-    padding:0;*/
+
+  .desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .macho{
+    background-color: $color-male;
+  }
+
+  .hembra{
+    background-color: $color-female;
+  }
+
 }
 
-.desc{
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
-.macho{
-  background-color:#6babe5;
-}
-
-.hembra{
-  background-color:#ecadb8;
-}
 
 #porquelosGalgos img{
   margin-top: 5em;
