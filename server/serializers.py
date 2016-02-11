@@ -20,12 +20,7 @@ class EnAdopcionSerializer(serializers.HyperlinkedModelSerializer):
         model = enAdopcion
         fields = ('id','nombre', 'genero', 'edad', 'desc')
 
-class EnAdopcionFotosSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = enAdopcionFotos
-        fields = ('imagen', 'galgo')
-
-class EnAdopcionFotosPorGalgoSerializer(serializers.HyperlinkedModelSerializer):
+class enAdopcionFotoSerializer(serializers.ModelSerializer):
     class Meta:
         model = enAdopcionFotos
         fields = ('imagen', 'galgo')

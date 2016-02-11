@@ -15,5 +15,5 @@ class enAdopcion(models.Model):
 
 
 class enAdopcionFotos(models.Model):
-    galgo = models.ForeignKey('enAdopcion', blank=True, null=True, related_name='the_owner_of_this_photo')
+    galgo = models.ForeignKey(enAdopcion, blank=True, null=True, related_name='the_owner_of_this_photo')
     imagen = models.ImageField('File', upload_to='images/')
