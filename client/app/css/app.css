@@ -110,9 +110,15 @@ hr{
   border-color: black;
 }
 
-#separador{
-    margin-top: 4em;
+.separador{
+  margin-top: 4em;
   margin-bottom: 2em;
+}
+
+.separador .medio{
+  margin-top: 4em;
+  margin-bottom: 2em;
+  width: 50%;
 }
 
 #listapepos{
@@ -145,6 +151,7 @@ hr{
 }
 
 .tarjetaEnAdopcion{
+  padding: 1em 1.3em;
     /*border: 1px solid #ccc;
     margin: 0.5em;
     box-sizing: border-box;
@@ -242,7 +249,7 @@ hr{
 }
 @media all and (min-width: 420px){
   #footer{
-  margin-top: 4em;
+  margin-top: 2em;
   background-color: #1bb7cd;
   padding-top: 4em;
   padding-bottom: 2em;

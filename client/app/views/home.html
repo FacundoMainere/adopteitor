@@ -9,22 +9,26 @@
     <p id="jumbotronBtn"><a class="btn btn-lg btn-primary" ui-sref="mision" role="button">Conoce mas!</a></p>
   </div>
 </div>
-<hr id="separador" />
+<hr class="separador" />
 <div class="container-fluid" ng-controller="GalgosEnAdopcion">
-    <div class="row" id="listapepos">
+    <div class="row text-center" id="listapepos">
         <h1>Galgos en adopcion</h1>
     </div>
     <div class="text-center" id="listapepos">
-        <div class="col-sm-3" ng-repeat="galgo in galgosEnAdopcion">
-          <div class="well tarjetaEnAdopcion">
+        <div class="col-sm-3" ng-repeat="galgo in galgosEnAdopcion | limitTo : 8 ">
+          <div class="tarjetaEnAdopcion">
             <div id="edad" ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">
                 <p></p>
             </div>
             <img class="img-circle" src="img/adopcion/Anakin.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2 ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">{{galgo.nombre | limitTo : 9}}{{galgo.nombre.length > 9 ? '...' : ''}} ({{galgo.edad}})</h2>
+            <h2 ng-class="{'m': 'macho', 'h': 'hembra'}[galgo.genero]">{{galgo.nombre | limitTo : 9}}{{galgo.nombre.length > 9 ? '...' : ''}}</h2>
             <p class="desc">{{galgo.desc | limitTo : 30 }}{{galgo.desc.length > 30 ? '...' : ''}}</p>
             <span><a class="btn btn-primary" href="#" role="button" ng-click="saberMas(galgo.id)">Saber mas!</a></span>
           </div>
         </div>
     </div>
+</div>
+<div class="row text-center">
+  <hr class="separador medio" />
+  <span><a class="btn btn-primary" href="#" role="button" ng-click="saberMas(galgo.id)">Ver mas</a></span>
 </div>
