@@ -64,3 +64,5 @@ bower_components/
 
 server/venv/
 client/node_modules/
+client/app/css/
+client/app/.sass-cache/
