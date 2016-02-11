@@ -50,3 +50,15 @@ Finnaly:
 pip install MySQL-python
 
 Works!
+
+
+### Usage
+
+Run client:
+    cd client && npm start
+
+Run server:
+    cd server && workon venv && python manage.py runserver
+
+Run gulp:
+    cd client && gulp && gulp watch
