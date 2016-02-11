@@ -21,11 +21,4 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./app/css'));
 });
 
-gulp.task('server', function() {
-  var server = child.spawn('node', ['server.js']);
-  var log = fs.createWriteStream('server.log', {flags: 'a'});
-  server.stdout.pipe(log);
-  server.stderr.pipe(log);
-});
-
-gulp.task('default', ['css', 'server']);
+gulp.task('default', ['css']);
