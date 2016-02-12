@@ -63,6 +63,7 @@ bower_components/
 *.sqlite3
 
 server/venv/
+server/uploads/
 client/node_modules/
 client/app/css/
 client/.sass-cache/
