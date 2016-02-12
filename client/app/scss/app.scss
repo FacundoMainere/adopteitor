@@ -1,0 +1,269 @@
+$background: #e1f3f5;
+$color-male: #6babe5;
+$color-female: #ecadb8;
+
+.vcenter {
+  vertical-align: middle;
+  float: none;
+}
+
+body{
+	font-family: 'delicious_smallcapsregular', sans-serif;
+  margin-left:0px;
+  margin-right:0px;
+  padding:0;
+  background-color: $background;
+}
+
+@media all and (max-width: 420px){
+  #header{
+    text-align: center;
+    background-image: url("../img/header_md.jpg");
+    background-position: center;
+    height:214px;
+
+  }
+  #headerContainer{
+  background-color: #1bb7cd;
+}
+}
+@media all and (min-width: 421px){
+  #header{
+  text-align: center;
+  background-image: url("../img/header.jpg");
+  height:314px;
+}
+
+#headerContainer{
+  background-color: #1bb7cd;
+}
+}
+
+@media all and (max-width: 420px){
+  h1{
+    text-align: center;
+    font-size: 2em;
+  }
+}
+h1, h2, h3, h4{
+  font-family: 'chunkfiveroman', sans-serif;
+}
+
+.btn{
+  font-family: 'delicious_smallcapsregular', sans-serif;
+  font-style: bold;
+}
+.row{
+    margin-right:0 !important;
+    margin-left:0 !important;
+}
+
+#logo{
+  position: relative;
+  top:80%;
+}
+
+#menu li{
+    text-transform: uppercase;
+}
+#menu a:hover{
+  text-decoration: none;
+}
+
+#menu ul{
+  list-style-type: none;
+  padding:0px;
+  margin: 0px;
+}
+
+#menu li{
+  display: inline-block;
+  padding:10px;
+  font-family: 'chunkfiveroman', sans-serif;
+}
+
+#menuSmall{
+  margin-top: 6em;
+  text-align: center;
+}
+
+#menuLeft{
+  margin-top: 1em;
+  text-align: left;
+  padding: 0px;
+  }
+
+#menuRight{
+  margin-top: 1em;
+  text-align: right;
+  padding: 0px;
+}
+
+#menu hr{
+  width: 90%;
+}
+
+#hrMenuLeft{
+  float: left;
+}
+
+#hrMenuRight{
+  float: right;
+}
+
+hr{
+  border-color: black;
+}
+
+.separador{
+  margin-top: 4em;
+  margin-bottom: 2em;
+  .medio{
+    width: 50%;
+  }
+}
+
+
+
+.tarjetaEnAdopcion{
+  padding: 1em 1.3em;
+
+  .desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .macho{
+    background-color: $color-male;
+  }
+
+  .hembra{
+    background-color: $color-female;
+  }
+
+}
+
+
+
+#porquelosGalgos img{
+  margin-top: 5em;
+}
+
+#intro{
+    margin-top: 2em;
+}
+@media all and (max-width: 420px){
+  #comoAyudar{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  #comoAyudar div{
+    margin-bottom: 2em;
+  }
+
+  #porquelosGalgos h1{
+  margin-bottom: 1em;
+  }
+
+  #intro h1{
+    margin-bottom: 1em;
+  }
+}
+
+#comoAyudar{
+  text-align: center;
+}
+
+.justificado{
+  text-align: justify;
+}
+
+#error404{
+  text-align: center;
+}
+
+#botonVerde{
+  background-color: #8caa73;
+  border-color: #637f4d;
+}
+
+#botonVioleta{
+  background-color: #7b61d8;
+  border-color: #644bbe;
+}
+
+#botonNaranja{
+  background-color: #e45141;
+  border-color: #b64134;
+}
+
+#botonAzul{
+  background-color: #477eec;
+  border-color: #3360bc;
+}
+
+#botonAmarillo{
+  background-color: #e5db30;
+  border-color: #c2b924;
+  color:black;
+}
+
+@media all and (max-width: 420px){
+  #footer div{
+    margin-bottom: 1em;
+  }
+  #footer{
+    margin-top: 1em;
+    background-color: #1bb7cd;
+    padding-top: 2em;
+    text-align: center;
+  }
+}
+@media all and (min-width: 420px){
+  #footer{
+  margin-top: 2em;
+  background-color: #1bb7cd;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  text-align: center;
+  }
+}
+
+#donaciones{
+  text-align: center;
+}
+
+
+#saber-mas-modal{
+  .header{
+    h1{
+      color: #202c2d;
+      text-shadow:
+        0 1px #808d93,
+        -1px 0 #cdd2d5,
+        -1px 2px #808d93,
+        -2px 1px #cdd2d5,
+        -2px 3px #808d93,
+        -3px 2px #cdd2d5,
+        -3px 4px #808d93,
+        -4px 3px #cdd2d5,
+        -4px 5px #808d93,
+        -5px 4px #cdd2d5,
+        -5px 6px #808d93,
+        -6px 5px #cdd2d5,
+        -6px 7px #808d93,
+        -7px 6px #cdd2d5,
+        -7px 8px #808d93,
+        -8px 7px #cdd2d5;
+    }
+    background-color: red;
+  }
+  .body{
+    background-color: green;
+  }
+  .footer{
+    background-color: blue;
+  }
+
+}
