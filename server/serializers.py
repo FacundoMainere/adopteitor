@@ -16,11 +16,13 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 class EnAdopcionSerializer(serializers.HyperlinkedModelSerializer):
+    the_owner_of_this_photo = serializers.StringRelatedField(many=True)
     class Meta:
         model = enAdopcion
-        fields = ('id','nombre', 'genero', 'edad', 'desc')
+        fields = ('id','nombre', 'genero', 'edad', 'desc','the_owner_of_this_photo')
 
 class enAdopcionFotoSerializer(serializers.ModelSerializer):
+    the_owner_of_this_photo = serializers.StringRelatedField(many=True)
     class Meta:
-        model = enAdopcionFotos
-        fields = ('imagen', 'galgo')
+        model = enAdopcion
+        fields = ('id','the_owner_of_this_photo')

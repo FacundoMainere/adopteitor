@@ -26,15 +26,10 @@ class enAdopcionViewSet(viewsets.ModelViewSet):
     """
     queryset = enAdopcion.objects.all()
     serializer_class = EnAdopcionSerializer
-
-class enAdopcionFotoList(generics.ListCreateAPIView):
-    queryset = enAdopcionFotos.objects.all()
-    serializer_class = enAdopcionFotoSerializer
     def get_queryset(self):
-        queryset = enAdopcionFotos.objects.all()
-
+        queryset = enAdopcion.objects.all()
         galgo_id = self.request.query_params.get('galgo_id', None)
         if galgo_id is not None:
-            queryset = queryset.filter(galgo=galgo_id).only('imagen')
+            queryset = enAdopcion.objects.filter(id=galgo_id)
 
         return queryset

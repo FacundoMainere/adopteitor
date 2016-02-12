@@ -27,7 +27,6 @@ router.register(r'enAdopcion', views.enAdopcionViewSet)
 #router.register(r'enAdopcionFotosPorGalgo', views.enAdopcionFotosPorGalgoViewSet)
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-#    url(r'^', include(router.urls)),
-#    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^fotoPorGalgo/$',views.enAdopcionFotoList.as_view())
+   url(r'^', include(router.urls)),
+   url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
